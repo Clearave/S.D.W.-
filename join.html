@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Join the Clearave</title><!--This would dispaly on the browser window-->
+	
+    <style type="text/css">
+	
+	</style><!--this is embedded CSS-->
+	
+	<script type="text/javascript">
+
+    function recentJobs(){
+        var select = document.getElementById("positionM");
+		var result = [];
+        var option;
+        for (var i=0, iLen=select.length; i<iLen; i++) {
+        option = select[i];
+ 
+            if (option.selected) {
+                result.push(option.value);
+            }
+        }
+        return result;
+    }
+	
+	function beforeSubmit(){
+	
+	    var sk = document.getElementsByName("skills");
+		var skString = [];
+		for(i in sk){
+		    if(sk[i].checked)
+			skString.push(sk[i].value)
+		}
+		
+		var ct = document.getElementsByName("cities");
+		var ctString = [];
+		for(i in ct){
+		    if(ct[i].checked)
+			ctString.push(ct[i].value)
+		}
+		
+		var po = document.getElementById("position");
+		var index = po.selectedIndex; 
+		var poString = po.options[index].value;
+		
+		var words = document.getElementById("words").value
+
+		alert("Your user name: " + document.getElementById("userName").value +
+		"\r\n" +
+		"Your current skills: " + skString +
+		"\r\n" +
+		"Cities expected: "+ ctString +
+		"\r\n" +
+		"Position expected: " + poString +
+		"\r\n" +
+		"Your recent jobs: " + recentJobs() +
+		"\r\n" +
+		"Your words: " + words +
+		"\r");
+		
+	}
+	
+	
+
+	</script>
+	
+</head>
+
+<body>
+	
+	    <form name="input" action="html_form_action.asp" method="post">
+		
+		    User Name:
+			<input type="text" name="userName" id="userName"/>
+		    
+			<fieldset>
+		        <legend>Your current skills</legend>
+			    <br/>
+		        <input class="current" type="checkbox" value="Web Design" name="skills" id="skills"/>Web Design
+		        <br/>
+			    <input class="current" type="checkbox" value="Java" name="skills" id="skills"/>Java
+			    <br/>
+			    <input class="current" type="checkbox" value="Database" name="skills" id="skills"/>Database
+			</fieldset>
+		
+		    <fieldset>
+		        <legend>Cities Expected</legend>
+			    <br/>
+		        <input type="radio" value="Beijing" name="cities" id="cities"/>Beijing
+		        <br/>
+			    <input type="radio" value="Shenzhen" name="cities" id="cities"/>Shenzhen
+			    <br/>
+			    <input type="radio" value="Zhuhai" name="cities" id="cities"/>Zhuhai
+			</fieldset>
+		
+		    Position:
+		    <select id="position">
+			    <option value="Officer" name ="officer" id="officer">Officer</option>
+				<option value="Manager" name ="managerA" id="managerA">Manager</option>
+				<option value="Engineer" name ="engineer" id="engineer">Engineer</option>
+				<option value="Atchitect" name ="atchitect" id="atchitect">Atchitect</option>
+			</select>
+			
+			</br>
+		    </br>
+		    </br>
+		    </br>
+		
+		    Recent Jobs
+			<br/>
+			<select multiple="multiple" size="7" id="positionM">
+			    <option value="Assitant" name="assitant" id="assitant">Assitant</option>
+				<option value="Software Engineer" name="softwareEngineer" id="softwareEngineer">Software Engineer</option>
+				<option value="Customer Service" name="customerService" id="customerService">Customer Service</option>
+				<option value="Manager" name="managerB" id="managerB">Manager</option>
+				<option value="CEO" name="ceo" id="ceo">CEO</option>
+			</select>
+		
+		    Please enter your words:
+		    </br>
+            <textarea rows="3" col="20" id="words"></textarea>
+	    		
+		    Upload a File
+			<input type="file" value="file" name="file" id="file"/>   
+             
+			<input type="submit" value="Submit" name="submit" id="submit" onclick="beforeSubmit();"/>
+			
+			<input type="reset" value="Reset" name="reset" id="reset"/>
+		</form>
+				
+				
+</body>
+</html>
+			
