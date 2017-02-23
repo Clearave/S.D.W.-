@@ -10,7 +10,7 @@
 #ContainerJ{
 	position: relative;
     width:960px;
-	height:435px;
+	height:585px;
 	margin:0 auto;/*let the container to be horizontally centered*/
 	background:#DFFFFF;
 }
@@ -201,4 +201,23 @@ select{
 #positionM{
 	width:200px;
 	height: 80px;
+}
+
+#addLife{
+    font-size:22px;
+	color:white;
+	font-weight:bold;
+}
+
+#lifeButton{
+	height: 50px;
+	width: 200px;
+	background-color: white;
+}
+
+#lifeButton:active{
+	height: 50px;
+	width: 200px;
+	background-color: red;
+	font-size: 26px;
 }

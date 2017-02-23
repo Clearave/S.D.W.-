@@ -1,4 +1,4 @@
-   
+   var life=1;
     function recentJobs(){
         var select = document.getElementById("positionM");
 		var result = [];
@@ -49,5 +49,11 @@
 		"\r");
 		
 	}
+
+	function addLife(){
+		document.getElementById("Lresult").value = life++;
+	}
+
+	
 	
 	
