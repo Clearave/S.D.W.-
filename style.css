@@ -178,13 +178,12 @@
 	position: fixed;
 	top: 10px;
 	margin-left: -130px;
-	height: 40px;
+	height: 50px;
 	width:120px;
 	z-index: 99;
 	background-color: #FF5555;
 }
 #join:hover{
-	font-size: 18px;
 	background-color:#F08080;
 }
 
@@ -220,4 +219,22 @@ select{
 	width: 200px;
 	background-color: red;
 	font-size: 26px;
+}
+
+#cal{
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	position: fixed;
+	top: 70px;
+	margin-left: -130px;
+	height: 50px;
+	width:120px;
+	z-index: 99;
+	background-color: #FF5555;
+}
+#cal:hover{
+	background-color:#F08080;
 }
