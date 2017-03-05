@@ -2,31 +2,69 @@
 #mainContainer{
 	position: absolute;
     width: 240px;
-	height: 360px;
+	height: 388px;
 	background: #DFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(220, 55, 55, 0.75);
 }
 
 #result{
+	padding: 5px;
 	width: 240px;
-	height: 87.7px;
+	height: 88px;
 	float: left;
 	text-align: right;
+	font-size: 30px;
+	border-style: solid;
+	border-width: 0px;
+	text-overflow: ellipsis;
 }
 
-#plusSign,#minusSign,#multiplySign,#dividedSign,#oneSign,#twoSign,#threeSign,#fourSign,#fiveSign,#sixSign,#sevenSign,#eightSign,#nineSign,#zeroSign,#doubleZeroSign,#pointSign{
+#plusSign,#minusSign,#multiplySign,#divideSign,#oneSign,#twoSign,#threeSign,#fourSign,#fiveSign,#sixSign,#sevenSign,#eightSign,#nineSign,#zeroSign,#doubleZeroSign,#pointSign{
 	width: 60px;
 	height: 60px;
 	float: left;
+	color: 	#040455;
+	background-color: #F5F5F5;
+	border-style: solid;
+    border-width: 0px;
+    font-size: 22px;
+}
+
+#plusSign:hover,#minusSign:hover,#multiplySign:hover,#divideSign:hover,#oneSign:hover,#twoSign:hover,#threeSign:hover,#fourSign:hover,#fiveSign:hover,#sixSign:hover,#sevenSign:hover,#eightSign:hover,#nineSign:hover,#zeroSign:hover,#doubleZeroSign:hover,#pointSign:hover,#equalSign:hover{
+	background-color: #E5E5E5;
+}
+
+#plusSign:active,#minusSign:active,#multiplySign:active,#divideSign:active,#oneSign:active,#twoSign:active,#threeSign:active,#fourSign:active,#fiveSign:active,#sixSign:active,#sevenSign:active,#eightSign:active,#nineSign:active,#zeroSign:active,#doubleZeroSign:active,#pointSign:active,#cleanSign:active,#equalSign:active{
+	font-size: 20px;
 }
 
 
-
-#cleanSign,#equalSign{
+#equalSign{
+	font-size: 22px;
 	width: 60px;
 	height: 120px;
 	float: right;
+	border-style: solid;
+	background-color: #F5F5F5;
+	border-width: 0px; 
 }
 
+#cleanSign{
+	font-size: 22px;
+	width: 60px;
+	height: 120px;
+	float: right;
+	border-style: solid;
+	background-color: #F5F5F5;
+	border-width: 0px; 
+}
+
+#cleanSign:hover{
+	color: white;
+	background-color: #FF5555;
+}
 
 #cleanDiv{
 	float: right;

@@ -28,7 +28,6 @@ function command(num){
 
 function sign(num){	
 	if(judge == 0){
-		alert("error!");
 	} //users can not continuously type two or more sign(+-*/)
 	else{
 		result = document.getElementById("result").value;
@@ -51,11 +50,12 @@ function sign(num){
 }
 
 function point(){
-	if(result == 0){
-			result = ["0."]
-	} //output 0. otherwise will output "."only
-	else if(result.indexOf(".") > -1){
+	result = document.getElementById("result").value;
+	if(result.indexOf(".") > -1){
 	} //can not exist two or more point
+	else if(result == 0){
+		result = ["0."]
+	} //output 0. otherwise will output "."only
 	else{
 			result = result + ["."]
 	}
