@@ -1,0 +1,45 @@
+
+#mainContainer{
+	position: absolute;
+    width: 240px;
+	height: 360px;
+	background: #DFFFFF;
+}
+
+#result{
+	width: 240px;
+	height: 87.7px;
+	float: left;
+	text-align: right;
+}
+
+#plusSign,#minusSign,#multiplySign,#dividedSign,#oneSign,#twoSign,#threeSign,#fourSign,#fiveSign,#sixSign,#sevenSign,#eightSign,#nineSign,#zeroSign,#doubleZeroSign,#pointSign{
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+
+
+
+#cleanSign,#equalSign{
+	width: 60px;
+	height: 120px;
+	float: right;
+}
+
+
+#cleanDiv{
+	float: right;
+}
+
+#equalSign{
+	float: right;
+}
+
+#topCal{
+	margin-right: 0px;
+}
+
+#bottomCal{
+	margin: 0px;
+}

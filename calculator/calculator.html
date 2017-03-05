@@ -1,30 +1,53 @@
 <html>
 <head>
+	<title>My CALCULATOR</title>
+
+    <link rel="stylesheet" href="cal.css"/>
+
 	<script type="text/javascript" src="cal.js"></script>
 </head>
 
 <body>
 
-<input type="text" name="result" id="result"/>
-</br>
-<input type="button" onclick="command(0)" value="0" name="zeroSign" id="zeroSign"/>
-<input type="button" onclick="command(1)" value="1" name="oneSign" id="oneSign"/>
-<input type="button" onclick="command(2)" value="2" name="twoSign" id="twoSign"/>
-<input type="button" onclick="command(3)" value="3" name="threeSign" id="threeSign"/>
-<input type="button" onclick="command(4)" value="4" name="fourSign" id="fourSign"/>
-</br>
-<input type="button" onclick="command(5)" value="5" name="fiveSign" id="fiveSign"/>
-<input type="button" onclick="command(6)" value="6" name="sixSign" id="sixSign"/>
-<input type="button" onclick="command(7)" value="7" name="sevenSign" id="sevenSign"/>
-<input type="button" onclick="command(8)" value="8" name="eightSign" id="eightSign"/>
-<input type="button" onclick="command(9)" value="9" name="nineSign" id="nineSign"/>
-</br>
-<input type="button" onclick="sign(1)" value="+" name="plusSign" id="plusSign"/>
-<input type="button" onclick="sign(2)" value="-" name="minusSign" id="minusSign"/>
-<input type="button" onclick="sign(3)" value="*" name="multiplySign" id="multiplySign"/>
-<input type="button" onclick="sign(4)" value="/" name="dividedSign" id="dividedSign"/>
-<input type="button" onclick="equal()" value="=" name="equalSign" id="equalSign"/>
-<input type="button" onclick="clean()" value="C" name="cleanSign" id="cleanSign"/>
+    <div id="mainContainer">
+    	<div id="resultDiv">
+            <input type="text" value="0" name="result" id="result" readonly="readonly"/>
+        </div>
+
+    	<input type="button" onclick="sign(1)" value="+" name="plusSign" id="plusSign"/>
+    	<input type="button" onclick="sign(2)" value="-" name="minusSign" id="minusSign"/>
+    	<input type="button" onclick="sign(3)" value="*" name="multiplySign" id="multiplySign"/>
+    	<input type="button" onclick="sign(4)" value="/" name="dividedSign" id="dividedSign"/></br>
+    	
+        <div id="cleanDiv">
+            <input type="button" onclick="clean()" value="C" name="cleanSign" id="cleanSign"/>
+        </div>
+
+    	<div id ="topCal">
+    	    <input type="button" onclick="command(7)" value="7" name="sevenSign" id="sevenSign"/>
+    	    <input type="button" onclick="command(8)" value="8" name="eightSign" id="eightSign"/>
+    	    <input type="button" onclick="command(9)" value="9" name="nineSign" id="nineSign"/></br>
+    	    <input type="button" onclick="command(4)" value="4" name="fourSign" id="fourSign"/>
+    	    <input type="button" onclick="command(5)" value="5" name="fiveSign" id="fiveSign"/>
+    	    <input type="button" onclick="command(6)" value="6" name="sixSign" id="sixSign"/>
+        </div>
+
+        <div id="equalDiv">
+            <input type="button" onclick="equal()" value="=" name="equalSign" id="equalSign"/>
+        </div>
+
+        <div id="bottomCal">
+    	    <input type="button" onclick="command(1)" value="1" name="oneSign" id="oneSign"/>
+    	    <input type="button" onclick="command(2)" value="2" name="twoSign" id="twoSign"/>
+    	    <input type="button" onclick="command(3)" value="3" name="threeSign" id="threeSign"/></br>
+            <input type="button" onclick="command(10)" value="00" name="doubleZeroSign" id="doubleZeroSign"/>
+    	    <input type="button" onclick="command(0)" value="0" name="zeroSign" id="zeroSign"/>
+    	    <input type="button" onclick="point()" value="." name="pointSign" id="pointSign"/>
+    	</div>
+    	
+    	
+    	
+    </div>
 
 </body>
 
