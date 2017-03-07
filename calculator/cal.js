@@ -28,7 +28,8 @@ function command(num){
 	judge = 1; //when judge=1 users can tpye sign(+-*/)
 }
 
-function sign(num){	
+function sign(num){
+    result = document.getElementById("result").value;	
 	if(judge == 0){
 	} //users can not continuously type two or more sign(+-*/)
 	else{
@@ -53,7 +54,7 @@ function sign(num){
 }
 
 function point(){
-	result = document.getElementById("result").value;
+	
 	if(pointJudge == 1){
 	    if(result == 0){
 		    result = ["0."];
@@ -78,7 +79,8 @@ function equal(){
         result = [eval(result)]; //run function-evaluation 
 	    document.getElementById("result").value = result; //out put/display the result
 	    result = 0;
-	    equalJudge = 0;		
+	    equalJudge = 0;
+	    pointJudge = 1;		
 	}
 	
 }
