@@ -81,3 +81,32 @@
 #bottomCal{
 	margin: 0px;
 }
+
+#sumDiv{
+	position: relative;
+	text-align: center;	
+	left: -150px;
+	top: -63px;
+	height: 50px;
+	width: 120px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+#sumButton{
+	text-align: center;	
+	margin-top: -325px;
+	height: 50px;
+	width: 120px;
+	background-color: #F5F5F5;
+	border-style: solid;
+	font-size: 22px;
+}
+
+#sumButton:hover{
+	color: white;
+	background-color: #FE32C1;
+}
+
+#sumButton:active{
+	font-size: 20px;
+}
